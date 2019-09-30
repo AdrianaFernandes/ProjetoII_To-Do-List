@@ -1,0 +1,40 @@
+body {
+    background-image: linear-gradient(to right, #e0c3fc, #8ec5fc);
+    font-family: 'Open Sans', sans-serif;
+    /* font-weight: bold; */
+}
+
+.titulo {
+    background-color: white;
+    width: 273px;
+    height: 75px;
+    margin: 0 6px;
+}
+
+h1{
+    font-size: 18px;
+    text-align: center;
+    padding: 24px;
+}
+
+#Nova_Tarefa {
+    background-color: white;
+    width: 270px;
+    height: 100px;
+    margin: 0 5px;
+    border: 2px solid #dcdcdc;
+}
+
+.botao {
+    background-color: #ba7af8;
+    padding: 8px 122px;
+    margin: 14px 5px;
+    border: none;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+li {
+    list-style-type: none;
+}
