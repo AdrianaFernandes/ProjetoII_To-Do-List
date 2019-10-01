@@ -1,15 +1,12 @@
-console.log('aloka')
-
-const botaoAdd = document.getElementById("ativaBotao");
-
-const todosAsTarefas = document.getElementById("todasAstarefas");
+const botaoAdd = document.getElementById("ativaBotao");;
+const lista = document.getElementById("lista");
 
 const erro = document.querySelector (".meu-erro");
 
 botaoAdd.addEventListener("click", function (evento) {
     evento.preventDefault();
 
-console.log('botao clicado')
+    console.log('botao clicado');
 
     const inputUsuario = document.getElementById("novaTarefa");
 
@@ -21,15 +18,28 @@ console.log('botao clicado')
      
     } else {
         erro.textContent = "";
+
+        let novoItem = document.createElement("div");
+        lista.appendChild(novoItem);
+        novoItem.classList.add("novoItem");
+                    
+        let tarefa = document.createElement("p");
+        tarefa.textContent = mensagem;        novoItem.appendChild(tarefa);
+        tarefa.classList.add("tarefaColor");
         
-        let comentario = document.createElement("p");
-    
-        comentario.textContent = mensagem;
+        tarefa.addEventListener("click", function() {            if(tarefa.classList.contains("feito")) {                tarefa.classList.remove("feito")            } else {
+                tarefa.classList.add("feito");
+            }
+        })
+             
+        let xDesfazer = document.createElement("span");    
+        xDesfazer.textContent = "x";
+        novoItem.appendChild(xDesfazer);
 
-        todosAsTarefas.appendChild(comentario);
-      
-        comentario.classList.add("tarefaColor");
-
+        xDesfazer.addEventListener("click", function() {
+            lista.removeChild(novoItem);
+        })
+        
     }  
     inputUsuario.value = "";
 });

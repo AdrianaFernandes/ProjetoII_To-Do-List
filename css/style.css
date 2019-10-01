@@ -6,46 +6,54 @@ body {
 
 .titulo {
     background-color: white;
-    width: 273px;
+    width: 277px;
     height: 75px;
-    margin: 0 6px;
+    margin: 0 10px;
 }
 
 h1{
     font-size: 18px;
     text-align: center;
-    padding: 24px;
+    padding: 26px;
+    
 }
 
 #novaTarefa {
     background-color: white;
-    width: 270px;
+    width: 272px;
     height: 100px;
-    margin: 0 5px;
+    margin: 0 10px;
     border: 2px solid #dcdcdc;
 }
 
 .botao {
     background-color: #ba7af8;
-    padding: 8px 121px;
-    margin: 2px 5px;
+    padding: 8px 122px;
+    margin: 2px 10px;
     border: none;
     color: white;
     font-size: 15px;
     font-weight: bold;
 }
 
-li {
-    list-style-type: none;
+.novoItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 264px;
+    background-color: white;
+    padding: 10px 5px;
+    margin: 0 10px;
+    border: 2px solid #dcdcdc;
 }
 
 .tarefaColor {
     font-size: 12px;
-    background-color: white;
-    padding: 15px 5px;
-    width: 267px;
-    margin: 0 4px;
-    border: 2px solid #dcdcdc;
+}
+
+span {
+    font-size: 12px;
+    text-align: center;
 }
 
 .meu-erro {
@@ -53,4 +61,9 @@ li {
     font-size: 16px;
     color: red;
     text-align: center;
+}
+
+.feito {
+    text-decoration: line-through;
+    color: gray;
 }
