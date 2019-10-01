@@ -27,8 +27,8 @@ h1{
 
 .botao {
     background-color: #ba7af8;
-    padding: 8px 122px;
-    margin: 14px 5px;
+    padding: 8px 121px;
+    margin: 2px 5px;
     border: none;
     color: white;
     font-size: 15px;
@@ -37,4 +37,12 @@ h1{
 
 li {
     list-style-type: none;
+}
+
+.tarefaColor {
+    font-size: 12px;
+    background-color: white;
+    padding: 15px 5px;
+    width: 267px;
+    margin-left: 4px;
 }
