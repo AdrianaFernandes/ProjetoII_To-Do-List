@@ -67,3 +67,30 @@ span {
     text-decoration: line-through;
     color: gray;
 }
+
+#bnt {
+    display: flex;
+    justify-content: space-evenly;
+    width: 276px;
+    height: 42px;
+    background-color: #ba7af8;
+    margin-left: 10px;  
+}
+
+.bnt1 {
+    color: white;
+    background-color: #ba7af8;
+    border: none;
+    width: 50%;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.bnt2 {
+    color: white;
+    background-color: #ba7af8;
+    border: none;
+    width: 50%;
+    font-weight: bold;
+    font-size: 15px;
+}
